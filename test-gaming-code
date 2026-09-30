@@ -1,0 +1,165 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameZone - Catch the Target</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b16;
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      height: 70px;
+      background: #121225;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+      border-bottom: 2px solid #25254a;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #00e5ff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+    }
+
+    nav a:hover {
+      color: #00e5ff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #aaa;
+    }
+
+    .game-container {
+      width: min(900px, 92%);
+      margin: 25px auto;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      background: #15152b;
+      padding: 15px 20px;
+      border-radius: 12px 12px 0 0;
+      font-size: 18px;
+    }
+
+    .stats span {
+      color: #00e5ff;
+      font-weight: bold;
+    }
+
+    #gameArea {
+      position: relative;
+      height: 500px;
+      background: radial-gradient(circle, #1c1c3d, #080812);
+      border: 2px solid #29295a;
+      overflow: hidden;
+      border-radius: 0 0 12px 12px;
+    }
+
+    #target {
+      position: absolute;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: #ff2bd6;
+      box-shadow: 0 0 25px #ff2bd6;
+      cursor: pointer;
+      display: none;
+    }
+
+    #startBtn {
+      display: block;
+      margin: 25px auto;
+      padding: 14px 35px;
+      border: none;
+      border-radius: 30px;
+      background: #00e5ff;
+      color: #001015;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    #startBtn:hover {
+      transform: scale(1.05);
+    }
+
+    #message {
+      text-align: center;
+      margin-top: 15px;
+      color: #aaa;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">🎮 GAMEZONE</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Games</a>
+      <a href="#">Leaderboard</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>⚡ Catch The Target</h1>
+    <p>Click the target as many times as possible before time runs out!</p>
+  </section>
+
+  <div class="game-container">
+
+    <div class="stats">
+      <div>Score: <span id="score">0</span></div>
+      <div>Time: <span id="time">30</span>s</div>
+      <div>Level: <span id="level">1</span></div>
+    </div>
+
+    <div id="gameArea">
+      <div id="target"></div>
+    </div>
+
+    <button id="startBtn">START GAME</button>
+
+    <div id="messag
+```
